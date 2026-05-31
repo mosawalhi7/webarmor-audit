@@ -25,6 +25,7 @@
 ---
 
 [Key Features](#-key-features) •
+[Compare](#-how-webarmor-audit-compares) •
 [Installation](#-installation) •
 [Usage Recipes](#-usage-recipes) •
 [Advanced Audits](#-advanced-audits--checks) •
@@ -57,6 +58,20 @@
 | **🎨 Multi-Format Reports** | Exports to console-friendly **Markdown**, programmatic **JSON**, premium interactive **Dark-Neon HTML**, and **SARIF** (fully compatible with GitHub Security Alerts). |
 | **⚙️ Config Profiles** | Customize grade thresholds and grading weights, or track custom proprietary headers via simple **TOML** configurations. |
 | **🤖 CI/CD Fail-Safe** | Return non-zero exit codes using `--fail-under` or `--fail-score` to break CI pipelines when targets fall short of compliance thresholds. |
+
+---
+
+## ⚖️ How WebArmor-Audit Compares
+
+| Feature / Capability | WebArmor-Audit | Mozilla Observatory | OWASP ZAP | Nikto |
+| :--- | :---: | :---: | :---: | :---: |
+| **Zero-Dependency (Pure Python)** | ✅ **Yes** | ❌ No | ❌ No (Java) | ❌ No (Perl) |
+| **Active SSL/TLS Cipher Probing** | ✅ **Yes** | ❌ No (Passive Only) | ⚠️ Partial | ⚠️ Limited |
+| **Smart Fuzzer (No False 404s)** | ✅ **Yes** | ❌ No | ⚠️ Generic | ⚠️ High Noise |
+| **Automated WAF Fingerprinting** | ✅ **Yes** | ❌ No | ❌ No | ⚠️ Limited |
+| **SARIF Native Export (CI/CD)** | ✅ **Yes** | ❌ No | ✅ Yes | ❌ No |
+| **Execution Speed** | ⚡ **Ultra Fast** | ⚠️ Network Dependent | 🐢 Heavy/Slow | 🐢 Very Slow |
+| **Premium Dark-Neon HTML UI** | ✅ **Yes** | ✅ Yes (Web Only) | ❌ No | ❌ No |
 
 ---
 

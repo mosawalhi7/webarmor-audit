@@ -1,0 +1,22 @@
+# WebArmor-Audit — Custom Profile Example
+
+[headers]
+# Define custom weights for security headers (max score is the sum of all weights)
+Content-Security-Policy = 30
+Strict-Transport-Security = 20
+X-Frame-Options = 10
+X-Content-Type-Options = 10
+Referrer-Policy = 10
+Permissions-Policy = 10
+
+# You can also add custom headers that you want to track
+# X-XSS-Protection = 5
+
+[thresholds]
+# Define custom grade percentage thresholds
+"A+" = 95
+A = 85
+B = 75
+C = 60
+D = 45
+F = 0

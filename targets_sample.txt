@@ -1,0 +1,6 @@
+# WebArmor-Audit — Bulk Targets List
+# Lines starting with # or ; are ignored
+
+https://github.com
+https://google.com
+https://owasp.org

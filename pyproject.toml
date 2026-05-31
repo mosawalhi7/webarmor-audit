@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "webarmor-audit"
+version = "1.0.0"
+description = "A professional CLI tool for auditing HTTP security headers and SSL/TLS configurations."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "WebArmor Project" },
+]
+keywords = ["security", "headers", "audit", "ssl", "http", "appsec"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Internet :: WWW/HTTP",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+webarmor-audit = "webarmor_audit.cli:run"
+
+[project.urls]
+Homepage = "https://github.com/webarmor/webarmor-audit"
+Repository = "https://github.com/webarmor/webarmor-audit"
+Issues = "https://github.com/webarmor/webarmor-audit/issues"
+
+[tool.setuptools.packages.find]
+include = ["webarmor_audit*"]

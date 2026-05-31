@@ -120,7 +120,7 @@
 ### Setup
 ```bash
 # 1. Clone the repository
-git clone https://github.com/webarmor/webarmor-audit.git
+git clone https://github.com/mosawalhi7/webarmor-audit.git
 cd webarmor-audit
 
 # 2. Create a virtual environment
